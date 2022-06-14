@@ -1,0 +1,432 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* COLORS
+#0B30E1
+#131313 */
+
+/* UTILITY CLASSES */
+
+.flex {
+  display: flex;
+}
+
+/* NAVIGATION */
+
+.nav-flex-cont {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 25px 0px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav span {
+  color: #0b30e1;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin: 0 30px 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #131313;
+  font-weight: 500;
+  margin: 0 15px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #0b30e1;
+  color: #131313;
+  padding-bottom: 10px;
+}
+
+nav a:active {
+  color: #0b30e1;
+}
+
+.nav-btn {
+  background-color: #0b30e1;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  transition: 0.3s;
+  margin-left: 10px;
+}
+
+.nav-btn:hover {
+  opacity: 0.7;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .hamburger {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    font-size: 25px;
+    color: #131313;
+  }
+
+  .nav-left a,
+  .nav-right a,
+  .nav-btn {
+    display: none;
+  }
+}
+
+/* MAIN SECTION */
+
+.heading {
+  margin-top: 200px;
+}
+
+.heading-container {
+  max-width: 850px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.heading h1 {
+  text-align: center;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.heading p {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.heading-btn {
+  background-color: #0b30e1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  transition: 0.3s;
+  margin-top: 25px;
+}
+
+.heading-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.heading-btn:hover {
+  opacity: 0.7;
+}
+
+.heading-sub-links {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 35px;
+}
+
+.heading-sub-links p {
+  color: #0b30e1;
+  font-size: 16px;
+}
+
+.hd-font-icon {
+  margin-right: 7px;
+}
+
+.heading-img {
+  width: 680px;
+  margin-top: 110px;
+  padding: 0 20px;
+}
+
+@media (max-width: 1000px) {
+  .heading-container h1 {
+    font-size: 48px;
+  }
+
+  .heading-container p {
+    font-size: 16px;
+  }
+
+  .heading-container {
+    max-width: 650px;
+    text-align: center;
+  }
+
+  .heading-img {
+    width: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  .heading-container h1 {
+    font-size: 36px;
+  }
+
+  .heading-container p {
+    font-size: 14px;
+  }
+
+  .heading-container {
+    max-width: 650px;
+    text-align: center;
+  }
+
+  .heading-img {
+    width: 400px;
+  }
+
+  .heading-sub-links p {
+    font-size: 14px;
+  }
+}
+
+/* EXPERIENCE SECTION */
+
+.experience-container {
+  display: flex;
+  margin-top: 250px;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.experience-img {
+  width: 710px;
+}
+
+.experience-container h2 {
+  font-size: 48px;
+  font-weight: 500;
+  border-bottom: 2px solid #0b30e1;
+  padding-bottom: 5px;
+}
+
+.experience-container p {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+}
+
+.experience-left {
+  max-width: 482px;
+  text-align: center;
+  margin: 100px 0 0 250px;
+}
+
+@media (max-width: 1500px) {
+  .experience-img {
+    width: 510px;
+  }
+
+  .experience-container h2 {
+    font-size: 32px;
+  }
+
+  .experience-container p {
+    font-size: 14px;
+  }
+
+  .experience-left {
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .experience {
+    margin-top: -150px;
+  }
+
+  .experience-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .experience-left {
+    padding-right: 15px;
+    margin-left: -30px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 650px) {
+  .experience-img {
+    width: 450px;
+  }
+}
+
+/* CARDS SECTION */
+
+.card-selection {
+  margin-top: 250px;
+  margin-bottom: 280px;
+}
+
+.card-heading {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.card-selection h2 {
+  font-size: 48px;
+  font-weight: 500;
+  border-bottom: 2px solid #0b30e1;
+  padding-bottom: 5px;
+}
+
+.card-selection p {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+}
+
+.card-option {
+  width: 330px;
+  height: 500px;
+  margin-right: 50px;
+  border-radius: 12px;
+  text-align: center;
+  padding: 55px 17px 75px 17px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: 0.4s;
+}
+
+.card-option:hover {
+  transform: translateY(6px);
+}
+
+.card-option h3 {
+  color: #0b30e1;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin: 20px 0;
+}
+
+.card-option p {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  margin-bottom: 85px;
+}
+
+.card-option button {
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #0b30e1;
+  transition: 0.4s;
+}
+
+.card-option button:hover {
+  opacity: 0.7;
+}
+
+.card-option a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card-option span {
+  color: rgb(51, 51, 51);
+}
+
+@media (max-width: 850px) {
+  .cards {
+    flex-wrap: wrap;
+  }
+
+  .card-option {
+    margin-bottom: 25px;
+  }
+}
+
+/* FOOTER SECTION */
+footer {
+  background-color: #0b30e1;
+  color: #fff;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 115px 180px 65px 180px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.footer-logo {
+  margin-right: 5px;
+  margin-bottom: 50px;
+}
+
+.copyright {
+  margin-top: 80px;
+}
+
+@media (max-width: 1400px) {
+  footer h4 {
+    font-size: 16px;
+  }
+
+  footer a {
+    font-size: 12px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 950px) {
+  .footer-container {
+    flex-wrap: wrap;
+  }
+
+  .m-mg {
+    margin-bottom: 10px;
+  }
+}
