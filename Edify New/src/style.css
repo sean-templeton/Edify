@@ -1,0 +1,283 @@
+/* COLORS 
+#092C50 
+#131313 */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* NAVIGATION */
+nav {
+  max-width: 140rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 6rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 3rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #131313;
+  font-weight: 500;
+}
+
+nav span {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #092c50;
+  padding-right: 0.5rem;
+  margin-left: -10px;
+}
+
+.edify-btn {
+  background-color: #092c50;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+button a {
+  color: #fff;
+  font-size: clamp(1.4rem, 2vw, 1.6rem);
+  transition: 0.4s;
+}
+
+button a:hover {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .hamburger {
+    border: none;
+    background-color: transparent;
+    font-size: 2.6rem;
+    color: #092c50;
+    display: block;
+  }
+
+  nav li {
+    display: none;
+  }
+
+  nav button {
+    display: none;
+  }
+}
+
+li a {
+  transition: 0.4s;
+}
+
+li a:hover {
+  border-bottom: 2px solid #092c50;
+  padding-bottom: 1.4rem;
+  color: #131313;
+}
+
+/* MAIN SECTION */
+.main {
+  margin: 14rem auto;
+  max-width: 94.8rem;
+  text-align: center;
+  padding: 0 3rem;
+}
+
+.landing-img {
+  max-width: clamp(35rem, 45vw, 68rem);
+}
+
+h1 {
+  font-size: clamp(4rem, 3vw, 6.4rem);
+  font-weight: 700;
+}
+
+.main-sub {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.sub-text {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+
+.sub-text p {
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  color: #092c50;
+  margin-top: 2rem;
+}
+
+/* EXPERIENCE SECTION */
+
+.experience {
+  margin: 25rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.e-img {
+  max-width: clamp(35rem, 45vw, 71rem);
+}
+
+.experience-heading {
+  max-width: 45rem;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10rem 2rem;
+}
+
+h2 {
+  font-size: clamp(3.2rem, 3vw, 4.8rem);
+  font-weight: 500;
+  border-bottom: 2px solid #092c50;
+}
+
+.experience-heading p {
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+}
+
+@media (max-width: 950px) {
+  .experience {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -10rem;
+  }
+}
+
+/* FEATURED CARDS */
+
+h3 {
+  text-align: center;
+  font-size: clamp(3.2rem, 3vw, 4.8rem);
+  margin-bottom: 8rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+  weight: 700;
+  color: #092c50;
+  margin-bottom: 1rem;
+}
+
+.featured-cards {
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+}
+
+.featured-cards p {
+  font-size: 2rem;
+  weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.platinum-light {
+  text-align: center;
+  margin-bottom: 35rem;
+}
+
+.card-img {
+  max-width: 31.3rem;
+  margin: 1rem 0;
+}
+
+.ratings-img {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 850px) {
+  .featured-cards {
+    flex-wrap: wrap;
+  }
+
+  h3 {
+    margin-top: -10rem;
+  }
+}
+
+/* FOOTER SECTION */
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 8rem 4rem;
+  background-color: #092c50;
+}
+
+.footer span {
+  font-size: 2rem;
+  weight: 700;
+  letter-spacing: 2px;
+}
+
+.f-section {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.f-section a {
+  color: #fff;
+  font-size: clamp(1.2rem, 3vw, 1.4rem);
+  weight: 300;
+  opacity: 0.8;
+}
+
+.footer-logo {
+  max-width: 5rem;
+  margin-bottom: 4rem;
+}
+
+.footer p {
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  max-width: 22rem;
+  margin-bottom: 4rem;
+}
+
+h5 {
+  font-size: 2.2rem;
+  weight: 700;
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: -10rem;
+  }
+
+  .m-less {
+    margin-top: -30rem;
+  }
+}
